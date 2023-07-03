@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()">NEWS</a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="nav-item hover-link" id="ipl" onclick="onNavItemClick('ipl')"><a href="#ipl">IPL</a></li>
+                    <li class="nav-item hover-link" id="finance" onclick="onNavItemClick('finance')"><a href="#finance">Finance</a></li>
+                    <li class="nav-item hover-link" id="politics" onclick="onNavItemClick('politics')"><a href="#politics">Politics</a></li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="enter something">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+            </div>
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 id="news-source">End Gadget 26/08/2023</h6>
+                <p id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ad debitis aliquid facere? Dolorem.</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
